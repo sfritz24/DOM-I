@@ -134,7 +134,27 @@ title.textContent = "Great Idea!";
 
 // start of added nav items
 let naV = document.querySelector('nav');
-let newA = document.createElement("a");
-naV.append("Good-bye", newA);
-naV.prepend("Hello", newA);
+let newAOne = document.createElement("a");
+let newATwo = document.createElement("a");
+naV.append(newAOne);
+naV.prepend(newATwo);
+
+let newFirst = document.querySelector('nav a:nth-of-type(1)');
+newFirst.textContent = "Hello";
+newFirst.setAttribute('href', '#');
+
+let newLast = document.querySelector('nav a:nth-of-type(8)');
+newLast.textContent = "Good-bye";
+newLast.setAttribute('href', '#');
 // end of added nav items
+
+// start of fun style
+naV.style.backgroundColor = 'black';
+firstNav.style.color = 'lime';
+newFirst.style.color = 'white';
+secNav.style.color = 'white';
+thirdNav.style.color = 'lime';
+forthNav.style.color = 'white';
+fifthNav.style.color = 'lime';
+sixNav.style.color = 'white';
+newLast.style.color = 'lime';
