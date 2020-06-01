@@ -100,3 +100,18 @@ visionH.textContent = siteContent["main-content"]["vision-h4"];
 
 let visionP = document.querySelector('.bottom-content .text-content:nth-of-type(3) p');
 visionP.textContent = siteContent["main-content"]["vision-content"];
+
+let contactH = document.querySelector('.contact h4');
+contactH.textContent = siteContent["contact"]["contact-h4"];
+
+let address = document.querySelector('.contact p:nth-of-type(1)');
+address.textContent = siteContent["contact"]["address"];
+
+let phone = document.querySelector('.contact p:nth-of-type(2)');
+phone.textContent = siteContent["contact"]["phone"];
+
+let email = document.querySelector('.contact p:nth-of-type(3)');
+email.textContent = siteContent["contact"]["email"];
+
+let copyRight =document.querySelector('footer p');
+copyRight.textContent = siteContent["footer"]["copyright"];
