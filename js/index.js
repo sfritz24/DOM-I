@@ -64,3 +64,21 @@ fifthNav.textContent = siteContent["nav"]["nav-item-5"];
 
 let sixNav = document.querySelector('nav a:nth-of-type(6)');
 sixNav.textContent = siteContent["nav"]["nav-item-6"];
+
+let ctaHTag = document.querySelector('.cta-text h1');
+ctaHTag.textContent = siteContent["cta"]["h1"];
+
+let ctaButton = document.querySelector('.cta-text button');
+ctaButton.textContent = siteContent["cta"]["button"];
+
+let featuresH = document.querySelector('.top-content .text-content:nth-of-type(1) h4');
+featuresH.textContent = siteContent["main-content"]["features-h4"];
+
+let featuresP = document.querySelector('.top-content .text-content:nth-of-type(1) p');
+featuresP.textContent = siteContent["main-content"]["features-content"];
+
+let aboutH = document.querySelector('.top-content .text-content:nth-of-type(2) h4');
+aboutH.textContent = siteContent["main-content"]["about-h4"];
+
+let aboutP = document.querySelector('.top-content .text-content:nth-of-type(2) p');
+aboutP.textContent = siteContent["main-content"]["about-content"];
