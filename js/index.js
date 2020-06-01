@@ -46,7 +46,9 @@ ctaLogo.setAttribute('src', siteContent["cta"]["img-src"]);
 
 let breakImg = document.getElementById("middle-img");
 breakImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+// end of updated img src
 
+// start of nav data
 let firstNav = document.querySelector('nav a:nth-of-type(1)');
 firstNav.textContent = siteContent["nav"]["nav-item-1"];
 
@@ -64,13 +66,17 @@ fifthNav.textContent = siteContent["nav"]["nav-item-5"];
 
 let sixNav = document.querySelector('nav a:nth-of-type(6)');
 sixNav.textContent = siteContent["nav"]["nav-item-6"];
+// end of nav data
 
+// start of cta section
 let ctaHTag = document.querySelector('.cta-text h1');
 ctaHTag.innerHTML = siteContent["cta"]["h1"];
 
 let ctaButton = document.querySelector('.cta-text button');
 ctaButton.textContent = siteContent["cta"]["button"];
+// end of cta section
 
+// start of main content
 let featuresH = document.querySelector('.text-content:nth-of-type(1) h4');
 featuresH.textContent = siteContent["main-content"]["features-h4"];
 
@@ -100,7 +106,9 @@ visionH.textContent = siteContent["main-content"]["vision-h4"];
 
 let visionP = document.querySelector('.bottom-content .text-content:nth-of-type(3) p');
 visionP.textContent = siteContent["main-content"]["vision-content"];
+// end of main content
 
+// start of contact section
 let contactH = document.querySelector('.contact h4');
 contactH.textContent = siteContent["contact"]["contact-h4"];
 
@@ -112,14 +120,21 @@ phone.textContent = siteContent["contact"]["phone"];
 
 let email = document.querySelector('.contact p:nth-of-type(3)');
 email.textContent = siteContent["contact"]["email"];
+// end of contact section
 
+// start of copyright
 let copyRight = document.querySelector('footer p');
 copyRight.textContent = siteContent["footer"]["copyright"];
+// end of copyright
 
+// start of title change
 let title = document.querySelector('head title');
 title.textContent = "Great Idea!";
+// end of title change
 
+// start of added nav items
 let naV = document.querySelector('nav');
 let newA = document.createElement("a");
 naV.append("Good-bye", newA);
 naV.prepend("Hello", newA);
+// end of added nav items
