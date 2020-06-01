@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1": "DOM Is Awesome",
+    "h1": "DOM <br/>Is <br/>Awesome",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -28,7 +28,7 @@ const siteContent = {
   },
   "contact": {
     "contact-h4" : "Contact",
-    "address" : "123 Way 456 Street Somewhere, USA",
+    "address" : "123 Way 456 Street <br/>Somewhere, USA",
     "phone" : "1 (888) 888-8888",
     "email" : "sales@greatidea.io",
   },
@@ -66,7 +66,7 @@ let sixNav = document.querySelector('nav a:nth-of-type(6)');
 sixNav.textContent = siteContent["nav"]["nav-item-6"];
 
 let ctaHTag = document.querySelector('.cta-text h1');
-ctaHTag.textContent = siteContent["cta"]["h1"];
+ctaHTag.innerHTML = siteContent["cta"]["h1"];
 
 let ctaButton = document.querySelector('.cta-text button');
 ctaButton.textContent = siteContent["cta"]["button"];
@@ -105,7 +105,7 @@ let contactH = document.querySelector('.contact h4');
 contactH.textContent = siteContent["contact"]["contact-h4"];
 
 let address = document.querySelector('.contact p:nth-of-type(1)');
-address.textContent = siteContent["contact"]["address"];
+address.innerHTML = siteContent["contact"]["address"];
 
 let phone = document.querySelector('.contact p:nth-of-type(2)');
 phone.textContent = siteContent["contact"]["phone"];
@@ -113,5 +113,8 @@ phone.textContent = siteContent["contact"]["phone"];
 let email = document.querySelector('.contact p:nth-of-type(3)');
 email.textContent = siteContent["contact"]["email"];
 
-let copyRight =document.querySelector('footer p');
+let copyRight = document.querySelector('footer p');
 copyRight.textContent = siteContent["footer"]["copyright"];
+
+let title = document.querySelector('head title');
+title.textContent = "Great Idea!";
