@@ -71,14 +71,32 @@ ctaHTag.textContent = siteContent["cta"]["h1"];
 let ctaButton = document.querySelector('.cta-text button');
 ctaButton.textContent = siteContent["cta"]["button"];
 
-let featuresH = document.querySelector('.top-content .text-content:nth-of-type(1) h4');
+let featuresH = document.querySelector('.text-content:nth-of-type(1) h4');
 featuresH.textContent = siteContent["main-content"]["features-h4"];
 
-let featuresP = document.querySelector('.top-content .text-content:nth-of-type(1) p');
+let featuresP = document.querySelector('.text-content:nth-of-type(1) p');
 featuresP.textContent = siteContent["main-content"]["features-content"];
 
-let aboutH = document.querySelector('.top-content .text-content:nth-of-type(2) h4');
+let aboutH = document.querySelector('.text-content:nth-of-type(2) h4');
 aboutH.textContent = siteContent["main-content"]["about-h4"];
 
-let aboutP = document.querySelector('.top-content .text-content:nth-of-type(2) p');
+let aboutP = document.querySelector('.text-content:nth-of-type(2) p');
 aboutP.textContent = siteContent["main-content"]["about-content"];
+
+let servicesH = document.querySelector('.bottom-content .text-content:nth-of-type(1) h4');
+servicesH.textContent = siteContent["main-content"]["services-h4"];
+
+let servicesP = document.querySelector('.bottom-content .text-content:nth-of-type(1) p');
+servicesP.textContent = siteContent["main-content"]["services-content"];
+
+let productH = document.querySelector('.bottom-content .text-content:nth-of-type(2) h4');
+productH.textContent = siteContent["main-content"]["product-h4"];
+
+let productP = document.querySelector('.bottom-content .text-content:nth-of-type(2) p');
+productP.textContent = siteContent["main-content"]["product-content"];
+
+let visionH = document.querySelector('.bottom-content .text-content:nth-of-type(3) h4');
+visionH.textContent = siteContent["main-content"]["vision-h4"];
+
+let visionP = document.querySelector('.bottom-content .text-content:nth-of-type(3) p');
+visionP.textContent = siteContent["main-content"]["vision-content"];
