@@ -118,3 +118,8 @@ copyRight.textContent = siteContent["footer"]["copyright"];
 
 let title = document.querySelector('head title');
 title.textContent = "Great Idea!";
+
+let naV = document.querySelector('nav');
+let newA = document.createElement("a");
+naV.append("Good-bye", newA);
+naV.prepend("Hello", newA);
